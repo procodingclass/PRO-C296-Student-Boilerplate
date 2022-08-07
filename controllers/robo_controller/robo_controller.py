@@ -13,6 +13,6 @@ while robot.step(timestep) != -1:
 
     angle=imu.getRollPitchYaw()
     
-    yaw_current= angle[2]
+    yaw_current= round(math.degrees(angle[2]))+180
     
     print(yaw_current)
